@@ -1,0 +1,62 @@
+html{
+                background: url(images/background.jpg);
+                color: whitesmoke;
+                font-family: "Comic Sans MS";
+            }
+            body{
+                margin-top: 30px;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            #sadrzaj{
+                padding-top: 30px;
+                padding-left: 30px;
+                padding-bottom: 20px;
+            }
+            #heder{
+                height: 160px;
+                padding-top: 10px;
+                text-align: center;
+                border: 3px solid rgb(205,33,34);
+                color: rgb(205,33,34);
+            }
+            #futer{
+                height: 50px;
+                padding-top: 10px;
+                text-align: center;
+                color: rgb(205,33,34);
+                border: 3px solid rgb(205,33,34);
+                white-space:nowrap;
+            }
+            form{
+                display: inline-block;
+                align-items: flex-start;
+            }
+            
+            label{
+                display: block;
+                float: left;
+                width: 200px;
+                margin-bottom: 5px;
+            }
+            input{
+                width: 200px;
+                margin-bottom: 5px;
+            }
+            button{
+                //margin-left: 100px;
+                width: 170px;
+                color: rgb(205,33,34);
+                padding: 7px;
+                font-family: "Comic Sans MS";
+            }
+            hr{
+                height: 5px;
+                background-color:  rgb(205,33,34);
+                border: 1px solid rgb(205,33,34);
+            }
+            #nazad{
+                float: right;
+                    
+            }
+

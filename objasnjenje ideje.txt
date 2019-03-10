@@ -1,0 +1,16 @@
+Postovanje, 
+zelim samo da razjasnim opcije koje se nalaze kada se korisnik uloguje kao BLAGAJNIK
+on ima dve opcije:
+
+1) UPDATE DOGADjAJ = poziva se Servlet koji prolazi kroz tabelu svih dogadjaja, uporedjuje njihovo
+		vreme odrzavanja sa trenutnim vremenom, i one koji su istekli cekira da su istekli.
+
+2) UPDATE REZERVACIJE = Servlet prolazi kroz sve rezervacije, uporedjuje njihovo vreme rezervisanja
+		sa trenutnim vremenom,(proverava i da li je dogadjaj za koji je rez istekao) i 
+		ako je proslo vise od 48h setuje da je Rezervacija istekla, dodaje jednu kaznenu rezervaciju
+		korisniku koji je rezervisao, proverava koliko ih ima i ako ih ima vise od 2,
+		blokira korisnika
+
+Ovako realizovan sistem nije ONLINE 0-24h pa da moze sam da uradi te UPDATE-ove baze podataka,
+resenje koje sam ja smislio je da svaki blagajnik mora da pokrene tu opciju u sistemu, a na samom
+sistemu je da sve ostalo odradi sam, blagajniku se vraca samo informacija sta je uradjeno.
